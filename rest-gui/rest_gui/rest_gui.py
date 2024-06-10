@@ -76,9 +76,9 @@ pepperoni_checkbox.grid(row=5, column=0)
 # streched goal 
 def calculate_price ():
     pizza_prices = {
-    "Small": 8,
-    "Medium": 10,
-    "Large": 12
+    "Small": 5,
+    "Medium": 7,
+    "Large": 10
     }
 
     burger_prices = {
@@ -133,11 +133,6 @@ def order_pizza():
                     f"\nExtra Ketchup? {extra_ketchup}"
                     f"\nDine-in or Takeout? {takeOrDine}"
                     f"\nTotal Price: ${total_order_price}")
-
-    
-
-
-    
 # Order button
 order_button = ttk.Button(root, text="Order", command=order_pizza)
 order_button.grid(row=6, columnspan=1, padx=10, pady=10)  
